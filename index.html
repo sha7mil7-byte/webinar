@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#f4f8f5">
+<title>Вебинар 28 октября</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="oswald-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="app.css?v=22">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<main class="wrap" id="main">
+
+  <!-- 1. Обложка -->
+  <header class="hero">
+    <span class="badge" id="badge"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Бесплатный вебинар · 28 октября</span>
+    <h1 class="title">Создавайте сайты, ботов и приложения с помощью ИИ<span>даже если никогда не программировали</span></h1>
+    <p class="lead">Узнайте, какие цифровые продукты заказывают предприниматели, сколько за них платят и как освоить новое направление с нуля.</p>
+    <div class="chips"><span>Реальные проекты</span><span>Опыт специалистов</span><span>Путь новичка</span></div>
+    <div class="hosts"><img src="mansur.webp" alt="Мансур Джамалдинов" width="300" height="400"><img src="ayub.webp" alt="Аюб" width="300" height="400"></div>
+    <p class="hostcap">Ведут Мансур и Аюб · в гостях Айнур и Далер</p>
+    <div class="timer" id="timer" hidden aria-label="До начала вебинара">
+      <div><b id="t-d">0</b><small>дн</small></div><div><b id="t-h">00</b><small>час</small></div><div><b id="t-m">00</b><small>мин</small></div>
+    </div>
+    <div class="live" id="live" hidden>Вебинар уже идёт</div>
+    <a class="btn reg" data-reg href="https://mansur-halalinvest.getcourse.ru/vibecoding_veb" target="_blank" rel="noopener">Зарегистрироваться бесплатно <span aria-hidden="true">→</span></a>
+  </header>
+
+  <!-- 2. Что вас ждёт -->
+  <section class="rv">
+    <h2>Что вас ждёт <span class="g">на вебинаре?</span></h2>
+    <p class="sub">Практика, реальные кейсы и ответы на ваши вопросы от экспертов.</p>
+    <div class="prog stag">
+      <article class="p-card">
+        <div class="p-txt"><span class="p-n">01</span><h3>Айнур: путь от ученика к результату</h3><p>Как он освоил вайбкодинг и заработал более 500 000 ₽ на сайтах. Покажет свои проекты и расскажет, с чего начинал.</p></div>
+        <div class="p-vis v-sum"><i>А</i><b>&gt;&nbsp;500&nbsp;000&nbsp;₽</b><small>заработал на сайтах</small></div>
+      </article>
+      <article class="p-card">
+        <div class="p-txt"><span class="p-n">02</span><h3>Далер: как устроена работа с заказчиками</h3><p>Как он работает в вайбкодинге, создаёт проекты и находит заказчиков. Поделится своими стратегиями.</p></div>
+        <div class="p-vis v-sum alt"><i>Д</i><small>Реальный опыт и работающие методы</small></div>
+      </article>
+      <article class="p-card">
+        <div class="p-txt"><span class="p-n">03</span><h3>Аюб: реальные сайты, боты и приложения</h3><p>Покажет готовые проекты и разберёт, сколько стоят такие работы в 2026 году.</p></div>
+        <div class="p-vis v-img"><img src="waybuilding.webp" alt="Сайт строительной компании WAY BUILDING" width="900" height="463" loading="lazy"></div>
+      </article>
+      <article class="p-card">
+        <div class="p-txt"><span class="p-n">04</span><h3>Презентация обучения</h3><p>Подробно расскажем о программе курса, формате и условиях участия.</p></div>
+        <div class="p-vis v-mods"><b>14 модулей</b><small>от нуля до проектов</small><span><i>▶</i><i>▤</i><i>▦</i></span></div>
+      </article>
+      <article class="p-card">
+        <div class="p-txt"><span class="p-n">05</span><h3>Живые ответы на ваши вопросы</h3><p>Разберём, с чего начать новичку, какие навыки нужны, как искать первых клиентов и какие перспективы у направления.</p></div>
+        <div class="p-vis v-chat"><span class="b1">•••</span><span class="b2">•••</span></div>
+      </article>
+    </div>
+    <p class="fine">Результаты индивидуальны и зависят от ваших действий.</p>
+    <a class="btn reg" data-reg href="https://mansur-halalinvest.getcourse.ru/vibecoding_veb" target="_blank" rel="noopener">Зарегистрироваться бесплатно <span aria-hidden="true">→</span></a>
+    <div class="facts">
+      <div><span class="fi"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><small id="fact-when">28 октября<br>в 15:00 (МСК)</small></div>
+      <div><span class="fi"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="13" rx="2.5"/><path d="M10 9l5 2.5-5 2.5z"/></svg></span><small>Онлайн,<br>ссылку пришлёт бот</small></div>
+      <div><span class="fi"><svg viewBox="0 0 24 24"><rect x="3.5" y="9" width="17" height="11.5" rx="2"/><path d="M12 9v11.5M3.5 13h17M12 9c-1.5-3.5-6-4-6-1.5S9.5 9 12 9zm0 0c1.5-3.5 6-4 6-1.5S14.5 9 12 9z"/></svg></span><small>Специальные условия для участников</small></div>
+    </div>
+  </section>
+
+  <!-- 3. Реальные проекты -->
+  <section class="rv">
+    <h2>Это не концепты. <span class="g">Это реальные проекты</span></h2>
+    <div class="scroller">
+      <a class="shot" href="https://waybuilding.ru/" target="_blank" rel="noopener" data-ext>
+        <img src="waybuilding.webp" alt="Сайт WAY BUILDING" width="900" height="463" loading="lazy">
+        <b>Сайт строительной компании</b><small>WAY BUILDING · открыть сайт ↗</small>
+      </a>
+      <div class="shot">
+        <img src="family-house.webp" alt="Сайт Family House" width="900" height="463" loading="lazy">
+        <b>Сайт загородных домов</b><small>Family House, дома с бассейном под Казанью</small>
+      </div>
+      <div class="shot phone-card">
+        <div class="mini-phone"><span>Вебинар по вайбкодингу</span><i></i><i></i><i class="s"></i><em>Зарегистрироваться</em></div>
+        <b>Telegram-боты и мини-приложения</b><small>Вы сейчас внутри такого</small>
+      </div>
+    </div>
+    <p class="swipe">Листайте →</p>
+  </section>
+
+  <!-- 4. Кто выступает -->
+  <section class="rv">
+    <h2>Кто <span class="g">выступает</span></h2>
+    <div class="people stag">
+      <div class="pp"><div class="ph"><img src="mansur.webp" alt="" width="80" height="80" loading="lazy"></div><b>Мансур Джамалдинов</b><small>Организатор курса. Бизнесмен и инвестор, 15 лет в бизнесе</small></div>
+      <div class="pp"><div class="ph"><img src="ayub.webp" alt="" width="80" height="80" loading="lazy"></div><b>Аюб</b><small>Спикер курса. Делает сайты, ботов и автоматизации с ИИ</small></div>
+      <div class="pp"><div class="ph ini">А</div><b>Айнур</b><small>Гость. Заработал более 500 000 ₽ на сайтах</small></div>
+      <div class="pp"><div class="ph ini">Д</div><b>Далер</b><small>Гость. Работает с заказчиками в вайбкодинге</small></div>
+    </div>
+  </section>
+
+  <!-- 5. Вопросы -->
+  <section class="rv">
+    <h2>Частые <span class="g">вопросы</span></h2>
+    <div class="faq">
+      <details><summary>Это бесплатно?</summary><p>Да.</p></details>
+      <details><summary>Нужен опыт?</summary><p>Нет, вебинар для тех, кто начинает с нуля.</p></details>
+      <details><summary>Нужен компьютер?</summary><p>Смотреть можно с телефона.</p></details>
+      <details><summary>Где пройдёт вебинар?</summary><p>Онлайн. После регистрации пришлём ссылку.</p></details>
+    </div>
+  </section>
+
+  <!-- 6. Финал -->
+  <section class="final rv">
+    <h2 id="f-title">28 октября — ждём вас</h2>
+    <p class="f-when" id="f-when">28 октября в 15:00 (МСК)</p>
+    <div class="timer small" id="timer2" hidden><div><b id="u-d">0</b><small>дн</small></div><div><b id="u-h">00</b><small>час</small></div><div><b id="u-m">00</b><small>мин</small></div></div>
+    <p class="f-note">Бесплатно. Живые ответы на ваши вопросы в эфире.</p>
+    <a class="btn reg big" data-reg href="https://mansur-halalinvest.getcourse.ru/vibecoding_veb" target="_blank" rel="noopener">Зарегистрироваться бесплатно <span aria-hidden="true">→</span></a>
+  </section>
+</main>
+
+<div class="fixbar" id="fixbar"><a class="btn" data-reg href="https://mansur-halalinvest.getcourse.ru/vibecoding_veb" target="_blank" rel="noopener">Зарегистрироваться бесплатно</a></div>
+<script src="app.js?v=23"></script>
+</body>
+</html>
