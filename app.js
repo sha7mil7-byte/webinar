@@ -73,10 +73,10 @@
   })();
 
   /* ---------- старт: дата и время вебинара заданы здесь (страница без сервера) ---------- */
-  cfg = { dayText: '28 октября', startsAt: '2026-10-28T20:00:00+03:00' };
+  cfg = { dayText: '28 октября', startsAt: '2026-10-28T15:00:00+03:00' };
   $('f-title').textContent = cfg.dayText + ' — ждём вас';
   $('fact-when').textContent = '';
-  $('fact-when').append(cfg.dayText, document.createElement('br'), 'в 20:00 (МСК)');
+  $('fact-when').append(cfg.dayText, document.createElement('br'), 'в 15:00 (МСК)');
   $('f-when').textContent = whenLabel();
   $('timer').hidden = false; $('timer2').hidden = false;
   tick(); setInterval(tick, 1000);
