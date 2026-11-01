@@ -253,3 +253,8 @@ a.shot small{color:var(--green-d);font-weight:700}
 .hosts.duo figcaption{font-size:14px;font-weight:700}
 .chips+.hosts.duo{margin-top:22px}
 .hosts.duo+.hostcap{margin-top:14px}
+
+.v-chat .b1{animation:bob 3s ease-in-out infinite}.v-chat .b2{animation:bob 3s ease-in-out -1.5s infinite}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -6px}}
+.v-mods.snap b{display:inline-block;animation:snap 2.8s ease-in-out infinite}
+@keyframes snap{0%,70%,100%{transform:scale(1)}82%{transform:scale(1.12)}}
