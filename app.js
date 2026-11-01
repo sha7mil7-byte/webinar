@@ -41,7 +41,7 @@
 
   /* ---------- дата и таймер ---------- */
   function whenLabel() {
-    if (!cfg || !cfg.startsAt) return ((cfg && cfg.dayText) || '28 октября') + ' · время объявим в Telegram';
+    if (!cfg || !cfg.startsAt) return ((cfg && cfg.dayText) || '1 ноября') + ' · время объявим в Telegram';
     return new Date(cfg.startsAt).toLocaleString('ru-RU', { timeZone: 'Europe/Moscow', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' }) + ' (МСК)';
   }
   function setNum(el, v) {
@@ -73,10 +73,10 @@
   })();
 
   /* ---------- старт: дата и время вебинара заданы здесь (страница без сервера) ---------- */
-  cfg = { dayText: '28 октября', startsAt: '2026-10-28T15:00:00+03:00' };
+  cfg = { dayText: '1 ноября', startsAt: '2026-11-01T19:00:00+03:00' };
   $('f-title').textContent = cfg.dayText + ' — ждём вас';
   $('fact-when').textContent = '';
-  $('fact-when').append(cfg.dayText, document.createElement('br'), 'в 15:00 (МСК)');
+  $('fact-when').append(cfg.dayText, document.createElement('br'), 'в 19:00 (МСК)');
   $('f-when').textContent = whenLabel();
   $('timer').hidden = false; $('timer2').hidden = false;
   tick(); setInterval(tick, 1000);
