@@ -246,3 +246,10 @@ a.shot small{color:var(--green-d);font-weight:700}
 @media (max-width:370px){.p-card{grid-template-columns:1fr}.p-vis{min-height:96px}}
 .chips+.hosts{margin-top:26px}
 .shot img,.v-img img,.pp .ph img{height:auto}.shot img{aspect-ratio:16/10}.v-img img{height:100%}
+.hosts.duo{height:auto;align-items:flex-start;justify-content:center;gap:22px;margin-top:22px}
+.hosts.duo::before{display:none}
+.hosts.duo figure{margin:0;width:min(38vw,150px);display:flex;flex-direction:column;align-items:center;gap:8px}
+.hosts.duo img{width:100%;max-width:none;height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;object-position:top center;background:var(--mint2);box-shadow:0 10px 22px -12px rgba(0,0,0,.35)}
+.hosts.duo figcaption{font-size:14px;font-weight:700}
+.chips+.hosts.duo{margin-top:22px}
+.hosts.duo+.hostcap{margin-top:14px}
